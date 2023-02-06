@@ -1,0 +1,55 @@
+.main-promo {
+  margin-bottom: 30px;
+  min-height: 160px;
+  background-color: #83b3d3;
+  background-image:
+    url("@img/index/icon-sedona.svg"),
+    url("@img/index/intro-triangle.svg"),
+    url("@img/index/background-desktop.jpg");
+    background-position:
+    50% 50%,
+    50% calc(100% + 1px),
+    50% 50%;
+    background-size:
+    229px 39px,
+    100% 40px,
+    cover;
+    background-repeat: no-repeat;
+}
+
+@media ($tablet) {
+  .main-promo {
+  min-height: 290px;
+  background-color: #83b3d3;
+  background-image:
+    url("@img/index/icon-sedona.svg"),
+    url("@img/index/intro-triangle.svg"),
+    url("@img/index/background-desktop.jpg");
+    background-position:
+    50% 50%,
+    50% calc(100% + 1px),
+    50% 50%;
+    background-size:
+    457px 78px,
+    100% 40px,
+    cover;
+    background-repeat: no-repeat;}
+}
+@media ($desktop){
+  .main-promo {
+    min-height: 290px;
+    background-color: #83b3d3;
+    background-image:
+      url("@img/index/icon-sedona.svg"),
+      url("@img/index/intro-triangle.svg"),
+      url("@img/index/background-desktop.jpg");
+      background-position:
+      50% 50%,
+      50% calc(100% + 1px),
+      50% 50%;
+      background-size:
+      460px 80px,
+      100% 40px,
+      cover;
+      background-repeat: no-repeat;}
+}

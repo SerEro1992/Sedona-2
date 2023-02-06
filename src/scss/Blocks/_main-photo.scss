@@ -1,0 +1,520 @@
+
+.main-photo {
+
+  &__header {
+    padding: 0 9px;
+  }
+
+  &__title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__video-gallery {
+  }
+}
+
+.gallery {
+  &__col{
+    padding: 0 10px;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
+
+
+  }
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E5E5;
+
+  }
+
+
+  &__link {
+  }
+
+  &__link--full {
+  }
+
+  &__image {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 11px;
+
+
+  }
+
+  &__information {
+    padding: 0 15px;
+
+  }
+
+  &__information--full {
+  }
+
+  &__description {
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__author {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__likes {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__like-count {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 14px;
+  }
+}
+.icon-like{
+  fill:#E7E5E5;
+  }
+
+.photo--full {
+}
+.button-like {
+  background-color:transparent;
+  margin-right: 12px;
+
+}
+.page-main {
+
+  &__header {
+  }
+
+  &__header--video {
+  }
+}
+
+.video {
+  margin-bottom: 72px;
+  &__image {
+    width: 100%;
+  }
+
+  &__panel {
+    position: relative;
+    margin: 0 10px;
+
+
+  }
+}
+.video-controls {
+  position: relative;
+  height: 45px;
+  right: 0;
+  left: 0;
+  top: -45px;
+  background: rgba(0, 0, 0, 0.3);
+
+
+  &__scale {
+    position: absolute;
+    height: 3px;
+    top: 50%;
+    right: 22px;
+    left: 22px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius:2px;
+
+  }
+
+  &__handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -3px;
+	  background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &__buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color:#F2F2F2;
+    bottom: -70px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+  &__button {
+    padding: 23px 0;
+
+  }
+
+  &__button--replay {
+    margin-left: 25px;
+  }
+
+  &__icon {
+    fill: #5C6870;
+  }
+
+  &__icon--replay {
+
+  }
+
+  &__button--subtitles {
+    margin-left: auto;
+  }
+
+  &__icon--subtitles {
+  }
+
+  &__button--fullscreen {
+    margin-right: 25px;
+    margin-left: 31px;
+  }
+
+  &__icon--fullscreen {
+  }
+}
+
+@media ($tablet){
+  .main-photo {
+
+    &__promo {
+
+    }
+
+    &__header {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+    &__gallery{
+      margin-bottom: 60px;
+    }
+
+    &__video-gallery {
+    }
+  }
+
+  .gallery {
+
+    &__col{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:0;
+    }
+
+    &__photo {
+    }
+
+    &__link {
+    }
+
+    &__link--full {
+
+    }
+
+    &__image {
+      margin-bottom: 0;
+
+    }
+    &__image-big{
+
+    }
+
+    &__information {
+      background-color: #e2e2e2;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 22px;
+      padding-bottom: 15px;
+    }
+    &__information-3n{
+      background-color: #eaeaea;
+    }
+
+    &__information--full {
+    }
+
+    &__description {
+    }
+
+    &__title {
+    }
+
+    &__author {
+    }
+
+    &__likes {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      margin-right: 10px;
+
+    }
+
+    &__like-count {
+    }
+  }
+  .photo--full {
+    grid-column: span 2;
+    grid-row: span 2;
+
+  }
+  .button-like {
+    margin-right: 0;
+  }
+  .page-main {
+
+    &__header {
+    }
+
+    &__header--video {
+    }
+  }
+
+  .video {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 500px;
+    display: flex;
+    flex-direction:column;
+
+    &__image {
+      max-height: 500px;
+    }
+
+    &__panel {
+      display: flex;
+      margin: 0;
+
+      }
+  }
+  .video-controls {
+
+    max-height: 93px;
+    padding: 45px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: calc(100% - 86px);
+
+
+    &__scale {
+      right: 166px;
+      left: 93px;
+
+    }
+
+    &__handle {
+    }
+
+    &__buttons {
+      background-color:transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      top: 0;
+      bottom: 0;
+    }
+
+    &__button {
+      background-color:transparent;
+    }
+
+    &__button--replay {
+        margin-left: 35px;
+    }
+
+    &__icon {
+      fill: #fff;
+    }
+
+    &__icon--replay {
+    }
+
+    &__button--subtitles {
+      margin-left: auto;
+
+     }
+
+    &__icon--subtitles {
+    }
+
+    &__button--fullscreen {
+      margin-left: 41px;
+      margin-right: 31px;
+
+     }
+
+    &__icon--fullscreen {
+    }
+  }
+  .icon-like{
+    fill:#000000;
+    opacity: 0.3;}
+}
+
+@media ($desktop){
+  .main-photo {
+
+    &__promo {
+
+    }
+
+    &__header {
+
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__video-gallery {
+
+    }
+  }
+
+  .gallery {
+    &__col{
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:0;
+    }
+
+    &__photo {
+      position: relative;
+    }
+
+    &__link {
+    }
+
+    &__link--full {
+    }
+
+    &__image {
+    }
+
+    &__information {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+
+    }
+
+    &__information--full {
+    }
+
+    &__description {
+    }
+
+    &__title {
+      color: #FFFFFF;
+    }
+
+    &__author {
+      color: #FFFFFF;
+    }
+
+    &__likes {
+
+    }
+
+    &__like-count {
+      color: #FFFFFF;
+    }
+  }
+  .photo--full {
+    grid-column: span 3;
+  }
+  .button-like {
+  }
+  .page-main {
+
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__header--video {
+    }
+  }
+  .video {
+
+    &__image {
+    }
+
+    &__panel {
+    }
+  }
+  .video-controls {
+
+    &__scale {
+    }
+
+    &__handle {
+    }
+
+    &__buttons {
+    }
+
+    &__button {
+    }
+
+    &__button--replay {
+    }
+
+    &__icon {
+    }
+
+    &__icon--replay {
+    }
+
+    &__button--subtitles {
+    }
+
+    &__icon--subtitles {
+    }
+
+    &__button--fullscreen {
+    }
+
+    &__icon--fullscreen {
+    }
+  }
+  .icon-like{
+    fill:#fff;
+  opacity: 1;}
+}

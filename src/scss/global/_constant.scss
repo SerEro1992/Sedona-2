@@ -1,0 +1,40 @@
+
+// Breakpoints
+
+$smaller: 320px;  // Iphone 5
+$small: 480px; // Portrait phones and smaller
+$medium: 768px; // Landscape phones and portrait tablets
+$big: 992px; //Landscape tablets and medium desktops
+$biger: 1200px; //Large desktops and laptops
+
+$small-max-width: ($medium - 1px);
+$medium-max-width: ($big - 1px);
+$big-max-width: ($biger - 1px);
+
+
+$w320: "(max-width: #{$smaller})";
+$w480: "(min-width: #{$small} and max-width #{$small-max-width})";
+$w768px: "(min-width: #{$medium} and max-width #{$medium-max-width})";
+$w992: "(min-width: #{$big} and max-width #{$big-max-width})";
+$w1200: "(min-width: #{$biger})";
+/* -----------*/
+
+// Breakpoints
+
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$tablet-max-width: ($desktop-width - 1px);
+
+$mobile: "(min-width: #{$mobile-width})";
+$tablet: "(min-width: #{$tablet-width})";
+$desktop: "(min-width: #{$desktop-width})";
+$tablet-only: "(max-width: #{$tablet-max-width})";
+
+
+//Retina
+$retina-dpi: 144dpi;
+$retina: "(min-resolution: #{$retina-dpi})";
+
+
+

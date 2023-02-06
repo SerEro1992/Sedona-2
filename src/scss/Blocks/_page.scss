@@ -1,0 +1,50 @@
+.wrapper{
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+  max-width: $biger;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+main{
+  flex:1 1 auto;
+}
+.container{
+  padding: 0 1px;
+}
+
+
+.button {
+  padding: 16px 5px;
+  background: #81B3D2;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button:hover{
+  background-color:#669EC0;
+}
+.button:active{
+  background-color:#5496BD;
+  opacity: 0.3;
+}
+
+@media ($tablet){
+  .wrapper{
+
+  }
+
+}
+@media ($desktop){
+  .wrapper{
+
+  }
+}

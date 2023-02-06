@@ -1,0 +1,70 @@
+<header class="main-header">
+  <div class="container">
+    <div class="header">
+      <!--burger-button-press-->
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="@img/index/logotype-desktop.svg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="@img/index/logotype-tablet.svg"
+          />
+          <img
+            class="header__logo-img"
+            width="102"
+            height="83"
+            src="@img/index/logotype-mobile.svg"
+            alt="City of Sedona"
+          />
+        </picture>
+      </a>
+      <div class="header__menu-button">
+        <span class="visually-hidden">Меню</span>
+        <button class="burger-button" type="button">
+          <svg width="23px" height="22px">
+            <use xlink:href="@img/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html" class="header__link">Главная</a>
+            <button class="header__menu-close-button">
+              <span class="visually-hidden">Закрыть бургер меню</span>
+              <svg width="23px" height="23px">
+                <use xlink:href="@img/icons/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <a href="photo.html" class="header__link">Фото и видео</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--current">Форма отзыва</a>
+          </li>
+          <li class="header__item">
+            <a href="https://htmlacademy.ru/" class="header__link"
+              >HTML ACADEMY</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  var menuOpen = document.getElementsByClassName("burger-button");
+  var menuClose = document.getElementsByClassName("header__menu-close-button");
+  var burgerMenu = document.getElementsByClassName("header");
+  menuOpen[0].onclick = function () {
+    burgerMenu[0].classList.add("burger-button-press");
+  };
+  menuClose[0].onclick = function () {
+    burgerMenu[0].classList.remove("burger-button-press");
+  };
+</script>

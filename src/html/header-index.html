@@ -1,0 +1,60 @@
+<header class="main-header">
+  <div class="container">
+    <div class="header">
+      <!--burger-button-press-->
+      <div class="header__logo">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="@img/index/logotype-desktop.svg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="@img/index/logotype-tablet.svg"
+          />
+          <img
+            class="header__logo-img"
+            width="102"
+            height="83"
+            src="@img/index/logotype-mobile.svg"
+            alt="City of Sedona"
+          />
+        </picture>
+
+      </div>
+      <div class="header__menu-button">
+        <span class="visually-hidden">Меню</span>
+        <button class="burger-button" type="button" tabindex="0">
+          <svg width="23px" height="22px">
+            <use xlink:href="@img/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link header__link--current">Главная</a>
+            <button class="header__menu-close-button" tabindex="0">
+              <span class="visually-hidden">Закрыть бургер меню</span>
+              <svg width="23px" height="23px">
+                <use xlink:href="@img/icons/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <a href="photo.html" class="header__link">Фото и видео</a>
+          </li>
+          <li class="header__item">
+            <a href="form.html" class="header__link">Форма отзыва</a>
+          </li>
+          <li class="header__item">
+            <a href="https://htmlacademy.ru/" class="header__link"
+              >HTML ACADEMY</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+

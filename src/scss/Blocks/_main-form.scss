@@ -1,0 +1,522 @@
+.main-form-container{
+  padding: 0 20px;
+}
+.reviews {
+
+		&__description {
+		}
+
+		&__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 19px;
+
+		}
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 16px;
+		}
+
+
+
+		&__help {
+      visibility: hidden;
+		}
+
+
+}
+
+.group-full_name{
+  padding: 20px 0 25px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+.group-contacts{
+  padding: 20px 0 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.group-review{
+  margin-top: 20px;
+  &__text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    background: #F2F2F2;
+    padding: 15px;
+    min-width: 200px;
+    width: 100%;
+  }
+}
+.group-impression{
+  padding: 20px 0 18px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  &__item{
+    padding: 22px 0;
+  }
+  &__text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+.group-attraction{
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 25px;
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  &__item{
+    padding: 30px 0;
+  }
+  &__text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+
+
+.group {
+  &__full-name{
+    display: flex;
+    align-items: center;
+  }
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+
+
+
+.form-label {
+}
+.form-name{
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.field {
+  width: 100%;
+  padding: 22px 14px;
+  max-height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color:#F2F2F2;
+
+
+}
+
+.icon-phone,
+.icon-mail {
+  position: absolute;
+  bottom: 0px;
+  right:0px;
+  display: flex;
+  width: 58px;
+  height: 58px;
+  background-color:#E6E6E6;
+  justify-content: center;
+  align-items:center;
+  }
+
+.field-group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+.control {
+  position: relative;
+	display: block;
+	padding-left: 74px;
+
+    &__input[type="checkbox"]:checked + .control__mark::before{
+    content:"";
+    background: url("@img/form/tick.svg") center  no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    top: 12px;
+    left: 6px;
+
+
+
+    }
+
+
+    &__input[type="radio"]+ .control__mark{
+    border-radius:50%;
+    }
+    &__input[type="radio"]:checked + .control__mark::before{
+    content:"";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:#242424
+    }
+
+    &__mark {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #F2F2F2;
+    border-radius: 10px;
+    background: #F2F2F2;
+
+    }
+    &__label {
+      font-weight: 700;
+    }
+}
+
+.main-form-button{
+  margin-top: 51px;
+  margin-bottom: 48px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+@media ($tablet){
+  .main-form {
+  }
+  .main-promo {
+  }
+  .visually-hidden {
+  }
+  .main-form-container {
+    padding: 0 60px;
+  }
+
+  .reviews {
+
+      &__description {
+      }
+
+      &__title {
+        font-size: 21px;
+        text-align: left;
+      }
+
+      &__text {
+
+      }
+
+      &__form {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__group {
+      }
+
+      &__help {
+        order: 7;
+        visibility:visible;
+        width: 50%;
+        align-self: center;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: right;
+        text-transform: uppercase;
+      }
+  }
+  .group-full {
+
+      &_name {
+        order: 2;
+        width: 50%;
+        border: none;
+        padding-left: 58px;
+        }
+  }
+  .group {
+
+      &__full-name {
+
+      }
+
+      &__contacts {
+      }
+  }
+  .field-group {
+  }
+  .form-label {
+  }
+  .form-name {
+  }
+  .field {
+  }
+  .group-contacts {
+    order: 3;
+    width: 100%;
+    margin-top: 73px;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    border-bottom: none;
+  }
+  .group-contacts .reviews__title{
+    position: absolute;
+    background-color:#ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -14px;
+    z-index: 2;
+    width: 60%;
+    text-align: center;
+    }
+
+
+
+  .icon-phone {
+  }
+  .icon-mail {
+  }
+  .group-impression {
+    order: 1;
+    width: 50%;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: none;
+
+      &__list {
+      }
+
+      &__item {
+      }
+
+      &__text {
+      }
+  }
+  .control {
+
+      &__input {
+      }
+
+      &__mark {
+      }
+  }
+  .group-attraction {
+    margin-top: 78px;
+    order: 4;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none;
+
+
+      &__list {
+        margin-top: 37px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+
+
+      }
+
+      &__item {
+        width: 35%;
+        margin-left: 50px;
+
+      }
+
+      &__text {
+      }
+  }
+  .group-attraction .reviews__title{
+    position: absolute;
+    background-color:#ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
+    z-index: 2;
+    width: 60%;
+    text-align: center;
+
+  }
+
+  .group-review {
+    margin-top: 76px;
+    order: 5;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+
+      &__text {
+        margin-top: 55px;
+      }
+  }
+  .group-review .reviews__title{
+    position: absolute;
+    background-color:#ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -12px;
+    z-index: 2;
+    width: 60%;
+    text-align: center;
+  }
+
+  .main-form-button {
+    order: 6;
+    width: 50%;
+  }
+  .main-title{
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+@media ($desktop){
+  .main-form {
+  }
+  .main-promo {
+  }
+  .visually-hidden {
+  }
+  .main-form-container {
+  }
+  .reviews {
+
+      &__description {
+      }
+
+      &__title {
+
+      }
+      &__title:first-child{
+
+      }
+
+      &__text {
+      }
+
+      &__form {
+      }
+
+      &__group {
+      }
+
+      &__help {
+      }
+  }
+  .group-full {
+
+      &_name {
+      }
+  }
+  .group {
+
+      &__full-name {
+      }
+
+      &__contacts {
+        width: 45%;
+      }
+  }
+  .field-group {
+  }
+  .form-label {
+  }
+  .form-name {
+  }
+  .field {
+  }
+  .group-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .icon-phone {
+
+  }
+  .icon-mail {
+    bottom: 20px;
+   }
+  .group-impression {
+
+      &__list {
+      }
+
+      &__item {
+      }
+
+      &__text {
+      }
+  }
+  .control {
+
+      &__input {
+      }
+
+      &__mark {
+      }
+  }
+  .group-attraction {
+
+
+      &__list {
+      }
+
+      &__item {
+        width: 20%;
+      }
+
+      &__text {
+      }
+  }
+  .group-review {
+
+      &__text {
+      }
+  }
+  .button {
+  }
+  .main-form-button {
+  }
+
+}

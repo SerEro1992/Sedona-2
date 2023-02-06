@@ -1,0 +1,240 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+
+
+  &__logo {
+    display: block;
+    position: relative;
+    z-index: 1;
+    order: 1;
+    }
+
+    &__logo-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  &__menu-button {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: 20px;
+    z-index: 5;
+    order: 2;
+  }
+
+
+  &__menu {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color:#ffffff;
+    background-color:#81B3D2;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  &__item {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    mix-blend-mode: normal;
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  &__item:last-child::after{
+    content: "";
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    mix-blend-mode: normal;
+  }
+
+  &__item:hover .header__link[href]{
+    background: #669EC0;
+  }
+  &__item:focus .header__link[href],
+  &__item:active .header__link[href]
+  {
+    background: #5496BD;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  &__item:disabled .header__link[href]{
+    background: #E5E5E5;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0 5px;
+    color:#ffffff;
+  }
+
+  &__menu-close-button {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 22px;
+    background-color:transparent;
+    cursor: pointer;
+    fill:#ffffff;
+  }
+  &__menu-close-button:hover{
+    opacity: 0.6;
+  }
+  &__menu-close-button:active,
+  &__menu-close-button:focus {
+    opacity: 0.3;
+
+  }
+}
+
+.burger-button {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background-color:transparent;
+}
+.burger-button:hover{
+  opacity: 0.6;
+}
+.burger-button:active,
+.burger-button:focus
+{
+  opacity: 0.3;
+}
+
+.burger-button-press .header__logo,
+.burger-button-press .burger-button{
+  display: none;
+}
+.burger-button-press .header__menu{
+  display: block;
+}
+
+
+
+
+@media ($tablet){
+  .main-header {
+    min-height: 56px;
+
+     }
+
+  .header {
+    display: block;
+
+
+         &__logo {
+          margin-bottom: 0;
+          z-index: 3;
+      }
+      &__menu-button {
+        display: none;
+      }
+
+      &__menu {
+        display: block;
+      }
+
+      &__list {
+        display: flex;
+        min-width: 768px;
+        background-color: #ffffff;
+      }
+
+      &__item {
+        min-height: 56px;
+        width: 20%;
+        background-color: #ffffff;
+        font-size: 14px;
+        line-height: 26px;
+        box-shadow:none;
+        padding: 15px 0;
+
+      }
+      &__item:nth-child(3){
+        margin-left: auto;
+      }
+      &__item:last-child::after{
+        display: none;
+      }
+
+      &__item:hover .header__link[href]{
+        background: #ffffff;
+      }
+      &__item:focus .header__link[href],
+      &__item:active .header__link[href]
+      {
+        background: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.3;
+      }
+      &__item:disabled .header__link[href]{
+        background: #E5E5E5;
+      }
+
+      &__link {
+        display: block;
+        color: #000000;
+        background-color: #ffffff;
+      }
+      &__link[href]:hover{
+        color: #81B3D2;
+      }
+      &__link[href]:focus,
+      &__link[href]:active{
+        background-color:transparent;
+        color: #000000;
+        opacity: 0.3;
+      }
+      &__link--current {
+        color:#766357;
+      }
+      &__menu-close-button {
+        display: none;
+      }
+  }
+  .burger-button-press .header__logo{
+    display: block;
+  }
+}
+
+
+@media ($desktop){
+  .header {
+      &__logo {
+        position: absolute;
+        margin-bottom: 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 188px;
+        height: 96px;
+      }
+
+      &__logo-img {
+        width: auto;
+        height: auto;
+      }
+      &__list {
+        width: 1200px;
+      }
+  }
+}
